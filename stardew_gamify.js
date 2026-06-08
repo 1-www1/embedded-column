@@ -517,7 +517,7 @@
     noteCategories: [],
     questsCompleted: 0,
     // 新增状态字段
-    todayReadCount: 0
+    todayReadCount: 0,
     readLog: [],  // 每日阅读日历 [{date, count}]
   };
 
