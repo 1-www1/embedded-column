@@ -1,0 +1,186 @@
+/* 星露谷物语主题 | body.stardew-mode 激活 */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+.stardew-mode{--vp-c-brand-1:#7cfc00;--vp-c-brand-2:#9acd32;--vp-c-brand-soft:rgba(124,252,0,.12);--vp-c-bg:#fdf4e3;--vp-c-bg-soft:#f5e6d0;--vp-c-bg-mute:#e8d5b8;--vp-c-text-1:#3e2723;--vp-c-text-2:#5d4037;--vp-c-text-3:#8d6e63;--vp-c-divider:#c9a96e;--shadow-1:0 1px 2px rgba(62,39,35,.08);--shadow-5:0 16px 48px rgba(62,39,35,.2);--sv-wood:#5c3d2e;--sv-wood-light:#d4a574;--sv-wood-dark:#3d2b1f;--sv-parchment:#fdf4e3;--sv-gold:#ffd700;--sv-green:#7cfc00;--sv-red:#e74c3c;--sv-border:#8b6914}
+.stardew-mode{font-family:'VT323',monospace;background:var(--sv-parchment);color:var(--sv-text-1)}
+.stardew-mode .layout{animation:stardew-fadein .6s ease-out}
+.stardew-mode .sidebar{background:var(--sv-wood-dark);border-right:3px solid var(--sv-border);font-family:'VT323',monospace}
+.stardew-mode .sidebar-header{background:var(--sv-wood);border-bottom:2px solid var(--sv-border);padding:16px 20px}
+.stardew-mode .sidebar-header h2{font-family:'Press Start 2P',monospace;font-size:11px;color:var(--sv-gold);text-shadow:1px 1px 0 #000}
+.stardew-mode .sidebar-header h2::before,.stardew-mode .sidebar-header h2::after{content:'\2728 '}
+.stardew-mode .sidebar-header .stats{color:#c9a96e;font-size:14px}
+.stardew-mode .sidebar-search input{background:var(--sv-wood);border:2px solid var(--sv-border);color:#fdf4e3;font-family:'VT323',monospace;font-size:16px;padding:8px 12px;box-shadow:inset 0 2px 4px rgba(0,0,0,.3)}
+.stardew-mode .sidebar-search input:focus{border-color:var(--sv-gold);box-shadow:0 0 0 2px rgba(255,215,0,.3)}
+.stardew-mode .sidebar-search input::placeholder{color:#a08060}
+.stardew-mode .nav-cat{font-family:'Press Start 2P',monospace;font-size:9px;color:var(--sv-gold);padding:12px 16px 8px;border-bottom:1px solid rgba(139,105,20,.3)}
+.stardew-mode .nav-cat:hover{color:#fff}
+.stardew-mode .nav-cat::before{border-left-color:var(--sv-gold)}
+.stardew-mode .nav-cat.open::before{border-left-color:var(--sv-green)}
+.stardew-mode .nav-cat .nav-cat-n{background:var(--sv-wood-dark);color:var(--sv-gold);border:1px solid var(--sv-border);border-radius:0;font-family:'VT323',monospace;font-size:14px}
+.stardew-mode .nav-group a{color:#c9a96e;font-size:16px;padding:7px 16px 7px 24px;border-left:3px solid transparent;border-bottom:1px solid rgba(61,43,31,.3);transition:all .15s}
+.stardew-mode .nav-group a:hover{color:#fdf4e3;background:rgba(124,252,0,.08);border-left-color:var(--sv-green);animation:stardew-bounce .3s ease}
+.stardew-mode .nav-group a.active{color:var(--sv-green);background:rgba(124,252,0,.12);border-left-color:var(--sv-green);font-weight:700}
+.stardew-mode .nav-group a .nm{color:#a08060;font-size:13px}
+.stardew-mode .progress-bar{height:8px;background:var(--sv-wood);border:2px solid var(--sv-border);border-radius:0;margin:8px 16px 4px;box-shadow:inset 0 1px 2px rgba(0,0,0,.3)}
+.stardew-mode .progress-bar .fill{background:linear-gradient(180deg,#7cfc00,#4caf50,#2e7d32);border-radius:0}
+.stardew-mode .main{background:var(--sv-parchment);}
+.stardew-mode .content{background:rgba(253,244,227,.6);border-left:1px solid rgba(139,105,20,.1);border-right:1px solid rgba(139,105,20,.1)}
+.stardew-mode .content h1{font-family:'Press Start 2P',monospace;font-size:18px;color:var(--sv-wood-dark);border-bottom:2px solid var(--sv-border);padding-bottom:12px;text-shadow:1px 1px 0 rgba(255,215,0,.2)}
+.stardew-mode .content h2{font-family:'Press Start 2P',monospace;font-size:13px;color:var(--sv-wood);border-bottom:2px dashed var(--sv-border);padding-bottom:8px}
+.stardew-mode .content h3{font-family:'VT323',monospace;font-size:26px;color:var(--sv-wood)}
+.stardew-mode .content h4{font-family:'VT323',monospace;font-size:22px;color:#5d4037}
+.stardew-mode .content p,.stardew-mode .content li{font-size:20px}
+.stardew-mode .content a{color:#2e7d32;text-decoration:underline;text-decoration-style:dashed}
+.stardew-mode .content a:hover{color:var(--sv-green)}
+.stardew-mode .content code{background:rgba(92,61,46,.1);color:#5d4037;padding:2px 8px;border-radius:0;border:1px solid rgba(139,105,20,.2);font-family:'VT323',monospace;font-size:18px}
+.stardew-mode .content img{border:2px solid var(--sv-border);box-shadow:3px 3px 0 var(--sv-wood-dark)}
+.stardew-mode button,.stardew-mode .note-btn{font-family:'VT323',monospace;font-size:18px;border-radius:0;border:2px solid var(--sv-border);background:var(--sv-wood-light);color:var(--sv-wood-dark);padding:6px 16px;cursor:pointer;box-shadow:2px 2px 0 var(--sv-wood-dark),inset 1px 1px 0 rgba(255,255,255,.3);transition:all .1s}
+.stardew-mode button:hover,.stardew-mode .note-btn:hover{background:#e0b880;box-shadow:1px 1px 0 var(--sv-wood-dark);transform:translate(1px,1px)}
+.stardew-mode button:active,.stardew-mode .note-btn:active{box-shadow:inset 2px 2px 4px rgba(0,0,0,.3);transform:translate(2px,2px)}
+.stardew-mode .note-btn.primary{background:var(--sv-green);color:#1a3a0a;border-color:#4caf50}
+.stardew-mode .mark-learned-btn{border-radius:0;font-family:'VT323',monospace}
+.stardew-mode .mark-learned-btn.done{background:var(--sv-green);color:#1a3a0a}
+.stardew-mode .copy-btn{font-family:'VT323',monospace;font-size:14px;border-radius:0;border:1px solid rgba(255,255,255,.2);background:rgba(92,61,46,.6);color:#c9a96e}
+.stardew-mode .copy-btn:hover{background:rgba(92,61,46,.8);color:var(--sv-gold)}
+.stardew-mode .content table{border:2px solid var(--sv-border);border-collapse:separate;border-spacing:0;font-family:'VT323',monospace;font-size:18px}
+.stardew-mode .content th{background:var(--sv-wood);color:var(--sv-gold);font-family:'Press Start 2P',monospace;font-size:9px;padding:10px 14px;border:1px solid var(--sv-border)}
+.stardew-mode .content td{padding:8px 14px;border:1px solid rgba(139,105,20,.3)}
+.stardew-mode .content tr:nth-child(even) td{background:rgba(212,165,116,.12)}
+.stardew-mode .content tr:hover td{background:rgba(124,252,0,.06)}
+.stardew-mode .content pre{background:#2d1f14;border:3px solid var(--sv-border);border-radius:0;box-shadow:3px 3px 0 var(--sv-wood-dark)}
+.stardew-mode .content pre code{color:#d4c4a8;font-family:'VT323',monospace;font-size:17px;background:transparent;border:none;padding:0;line-height:1.5}
+.stardew-mode .code-lang-label{font-family:'Press Start 2P',monospace;font-size:8px;color:var(--sv-gold);background:rgba(92,61,46,.8);border:1px solid var(--sv-border)}
+.stardew-mode .codehilite{background:#2d1f14;color:#d4c4a8}
+.stardew-mode .search-overlay{background:rgba(61,43,31,.7)}
+.stardew-mode .search-box{background:var(--sv-parchment);border:3px solid var(--sv-border);box-shadow:4px 4px 0 var(--sv-wood-dark)}
+.stardew-mode .search-box input{font-family:'VT323',monospace;font-size:22px;color:var(--sv-wood-dark);padding:14px 20px;border-bottom:2px solid rgba(139,105,20,.2)}
+.stardew-mode .search-box input::placeholder{color:#a08060}
+.stardew-mode .search-results .sr{font-family:'VT323',monospace;font-size:18px;padding:10px 20px;border-bottom:1px solid rgba(139,105,20,.1)}
+.stardew-mode .search-results .sr:hover{background:rgba(124,252,0,.1)}
+.stardew-mode .search-results .sr-cat{color:#a08060;font-size:14px}
+.stardew-mode .search-highlight{background:rgba(255,215,0,.35)}
+.stardew-mode .reading-progress{height:4px;background:linear-gradient(90deg,var(--sv-green),var(--sv-gold))}
+.stardew-mode ::-webkit-scrollbar{width:10px;height:10px}
+.stardew-mode ::-webkit-scrollbar-track{background:var(--sv-wood-dark)}
+.stardew-mode ::-webkit-scrollbar-thumb{background:var(--sv-wood-light);border:2px solid var(--sv-border)}
+.stardew-mode ::-webkit-scrollbar-thumb:hover{background:#e0b880}
+.stardew-mode .tip{background:rgba(124,252,0,.08);border-left:4px solid var(--sv-green);border-radius:0;font-family:'VT323',monospace;font-size:19px;color:#2e4a1a;padding:14px 18px}
+.stardew-mode .warning{background:rgba(255,215,0,.08);border-left:4px solid var(--sv-gold);border-radius:0;font-family:'VT323',monospace;font-size:19px;color:#5d4037;padding:14px 18px}
+.stardew-mode .danger{background:rgba(231,76,60,.08);border-left:4px solid var(--sv-red);border-radius:0;font-family:'VT323',monospace;font-size:19px;color:#5d2020;padding:14px 18px}
+.stardew-mode .content blockquote{border-left:3px solid var(--sv-gold);background:rgba(255,215,0,.06);border-radius:0;font-family:'VT323',monospace;font-size:19px;color:#5d4037}
+.stardew-mode .nav-footer{border-top:2px solid var(--sv-border);background:rgba(61,43,31,.1)}
+.stardew-mode .nav-footer a{font-family:'VT323',monospace;font-size:17px;border:2px solid var(--sv-border);border-radius:0;color:var(--sv-wood);}
+.stardew-mode .nav-footer a:hover{background:rgba(124,252,0,.1);border-color:var(--sv-green);color:#2e7d32}
+.stardew-mode .toc{background:var(--sv-parchment);border-left:2px solid var(--sv-border);font-family:'VT323',monospace}
+.stardew-mode .toc-title{font-family:'Press Start 2P',monospace;font-size:9px;color:var(--sv-wood-dark)}
+.stardew-mode .toc a{color:#8d6e63;font-size:16px;border-left:2px solid transparent}
+.stardew-mode .toc a:hover{color:#2e7d32}
+.stardew-mode .toc a.active{color:var(--sv-green);border-left-color:var(--sv-green)}
+.stardew-mode .theme-toggle,.stardew-mode .back-to-top,.stardew-mode .mobile-toggle{background:var(--sv-wood-light);border:2px solid var(--sv-border);border-radius:0;box-shadow:2px 2px 0 var(--sv-wood-dark);color:var(--sv-wood-dark)}
+.stardew-mode .theme-toggle:hover,.stardew-mode .back-to-top:hover{background:var(--sv-gold);transform:scale(1.1);box-shadow:2px 2px 0 var(--sv-wood-dark)}
+.stardew-mode .notes-section{border-top:2px solid var(--sv-border)}
+.stardew-mode .notes-section h3{font-family:'Press Start 2P',monospace;font-size:10px;color:var(--sv-wood)}
+.stardew-mode .note-textarea{background:var(--sv-parchment);border:2px solid var(--sv-border);border-radius:0;font-family:'VT323',monospace;font-size:18px;color:var(--sv-wood-dark);box-shadow:inset 0 2px 4px rgba(61,43,31,.15)}
+.stardew-mode .note-textarea:focus{border-color:var(--sv-gold);box-shadow:0 0 0 2px rgba(255,215,0,.2)}
+.stardew-mode .note-saved-hint{color:var(--sv-green);font-family:'VT323',monospace}
+.stardew-mode .welcome h1{font-family:'Press Start 2P',monospace;font-size:20px;color:var(--sv-wood-dark);border:none}
+.stardew-mode .welcome .subtitle{font-family:'VT323',monospace;font-size:24px;color:var(--sv-wood)}
+.stardew-mode .stats-card{background:var(--sv-wood-light);border:2px solid var(--sv-border);border-radius:0;box-shadow:3px 3px 0 var(--sv-wood-dark)}
+.stardew-mode .stats-card .num{font-family:'Press Start 2P',monospace;color:var(--sv-gold)}
+.stardew-mode .stats-card .label{font-family:'VT323',monospace;font-size:17px;color:var(--sv-wood-dark)}
+.stardew-mode .cat-progress-item .cat-bar{height:10px;background:var(--sv-wood-dark);border:2px solid var(--sv-border);border-radius:0}
+.stardew-mode .cat-progress-item .cat-bar .fill{background:linear-gradient(180deg,var(--sv-green),#4caf50);border-radius:0}
+.stardew-mode .learned-badge{background:var(--sv-green);color:#1a3a0a;border-radius:0;font-family:'VT323',monospace}
+.stardew-mode .export-panel textarea{font-family:'VT323',monospace;font-size:16px;background:var(--sv-parchment);border:2px solid var(--sv-border);color:var(--sv-wood-dark)}
+.stardew-mode .lightbox-overlay{background:rgba(61,43,31,.9)}
+.stardew-mode .lightbox-overlay img{border:3px solid var(--sv-border);box-shadow:0 0 40px rgba(255,215,0,.15)}
+.stardew-mode .mobile-bottom-bar{background:rgba(61,43,31,.95);border-top:3px solid var(--sv-border)}
+.stardew-mode .mobile-bottom-bar .bar-btn{font-family:'VT323',monospace;color:#c9a96e}
+.stardew-mode .mobile-bottom-bar .bar-btn:active{color:var(--sv-green);background:rgba(124,252,0,.1)}
+.stardew-mode .sidebar-overlay{background:rgba(61,43,31,.6)}
+.stardew-mode .toc-bottom-sheet{background:var(--sv-parchment);border:3px solid var(--sv-border);border-bottom:none}
+.stardew-mode .toc-bottom-sheet .sheet-handle span{background:var(--sv-border)}
+.stardew-mode .toc-bottom-sheet .sheet-header{border-bottom:2px solid var(--sv-border)}
+.stardew-mode .toc-bottom-sheet .sheet-header h3{font-family:'Press Start 2P',monospace;font-size:10px;color:var(--sv-wood-dark)}
+.stardew-mode .toc-bottom-sheet .sheet-close{background:var(--sv-wood-light);border:2px solid var(--sv-border);border-radius:0;color:var(--sv-wood-dark)}
+.stardew-mode .toc-bottom-sheet .sheet-body a{font-family:'VT323',monospace;font-size:19px;color:var(--sv-wood)}
+.stardew-mode .toc-bottom-sheet .sheet-body a.active{color:var(--sv-green);border-left-color:var(--sv-green)}
+@keyframes stardew-fadein{0%{opacity:0;transform:translateY(8px)}100%{opacity:1;transform:translateY(0)}}
+@keyframes stardew-bounce{0%{transform:translateX(0)}30%{transform:translateX(4px)}60%{transform:translateX(-2px)}100%{transform:translateX(0)}}
+@keyframes stardew-sparkle{0%,100%{opacity:1}50%{opacity:.4}}
+@keyframes stardew-season-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.15)}}
+.stardew-mode .season-indicator{position:fixed;top:52px;right:210px;z-index:99;display:flex;align-items:center;gap:6px;padding:4px 12px;background:var(--sv-wood);border:2px solid var(--sv-border);box-shadow:2px 2px 0 var(--sv-wood-dark);font-family:'Press Start 2P',monospace;font-size:8px;color:var(--sv-gold);user-select:none}
+.stardew-mode .season-indicator .season-icon{font-size:16px;animation:stardew-season-pulse 2s ease-in-out infinite}
+.stardew-mode .season-indicator.spring{border-color:#4caf50}.stardew-mode .season-indicator.spring .season-icon{color:#7cfc00}
+.stardew-mode .season-indicator.summer{border-color:#ff9800}.stardew-mode .season-indicator.summer .season-icon{color:#ffd700}
+.stardew-mode .season-indicator.autumn{border-color:#e65100}.stardew-mode .season-indicator.autumn .season-icon{color:#ff7043}
+.stardew-mode .season-indicator.winter{border-color:#90caf9}.stardew-mode .season-indicator.winter .season-icon{color:#e3f2fd}
+.stardew-mode .sv-achievement{display:flex;align-items:center;gap:12px;padding:12px 16px;background:var(--sv-wood-light);border:2px solid var(--sv-gold);box-shadow:3px 3px 0 var(--sv-wood-dark);animation:stardew-fadein .4s ease-out}
+.stardew-mode .sv-daily-quest{padding:12px 16px;background:rgba(212,165,116,.2);border:2px solid var(--sv-border)}
+@media(max-width:768px){.stardew-mode .content h1{font-size:14px}.stardew-mode .content h2{font-size:10px}.stardew-mode .content h3{font-size:22px}.stardew-mode .content p,.stardew-mode .content li{font-size:18px}.stardew-mode .content pre code{font-size:15px}.stardew-mode .content code{font-size:16px}.stardew-mode .content table{font-size:16px}.stardew-mode .content th{font-size:8px}.stardew-mode .search-box input{font-size:18px}.stardew-mode .season-indicator{right:60px;font-size:7px;padding:3px 8px}.stardew-mode .sv-level-badge{font-size:8px;padding:3px 8px}.stardew-mode .sv-achievement{padding:8px 12px}.stardew-mode .sv-daily-quest .sv-quest-item{font-size:16px}}
+@media(max-width:1200px){.stardew-mode .season-indicator{right:60px}}
+
+/* ========================================
+   移动端核心优化 (stardew 模式 + 通用)
+   ======================================== */
+
+/* 修正stardew模式手机字号 */
+@media(max-width:768px) {
+  .stardew-mode .content h1 { font-size: 24px !important; }
+  .stardew-mode .content h2 { font-size: 20px !important; }
+  .stardew-mode .content h3 { font-size: 18px !important; }
+  .stardew-mode .content h4 { font-size: 16px !important; }
+  .stardew-mode .content p,
+  .stardew-mode .content li { font-size: 16px; line-height: 1.7; }
+  .stardew-mode .content pre code { font-size: 13px; }
+  .stardew-mode .content code { font-size: 13px; }
+  .stardew-mode .content table { font-size: 14px; }
+  .stardew-mode .content th,
+  .stardew-mode .content td { padding: 8px 10px; }
+  .stardew-mode .season-indicator { right: 56px; font-size: 10px; padding: 4px 10px; }
+  .stardew-mode .sv-level-badge { font-size: 12px; padding: 4px 10px; }
+  .stardew-mode .sv-achievement { padding: 10px 14px; }
+  .stardew-mode .sv-daily-quest .sv-quest-item { font-size: 15px; }
+  .stardew-mode .mobile-bottom-bar { padding-bottom: env(safe-area-inset-bottom, 0); }
+  .stardew-mode .game-panel { max-width: 95vw; left: 2.5vw; right: 2.5vw; font-size: 14px; }
+  .stardew-mode .npc-dialog { bottom: 70px; left: 8px; right: 8px; max-width: none; }
+  .stardew-mode .npc-dialog .npc-text { font-size: 16px; }
+  .stardew-mode .npc-dialog .npc-name { font-size: 14px; }
+  .content table { display: block; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; }
+  .content table td, .content table th { white-space: nowrap; }
+  .content pre { max-height: 55vh; }
+  .content img { max-width: 100% !important; height: auto; border-radius: 8px; }
+  .content blockquote { margin-left: 0; margin-right: 0; padding: 12px 14px; }
+  .mermaid { max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .mermaid svg { max-width: none; }
+}
+
+/* 特小屏 */
+@media(max-width:375px) {
+  .stardew-mode .content h1 { font-size: 21px !important; }
+  .stardew-mode .content h2 { font-size: 18px !important; }
+  .stardew-mode .content p { font-size: 15px; }
+  .stardew-mode .npc-dialog .npc-text { font-size: 15px; }
+}
+
+/* 横屏手机 */
+@media(max-width:768px) and (orientation:landscape) {
+  .stardew-mode .content { padding: 12px 16px 70px; }
+  .stardew-mode .content h1 { font-size: 22px !important; }
+  .mobile-bottom-bar { height: 44px; }
+  .mobile-bottom-bar .bar-inner { height: 44px; }
+  .sidebar { width: min(60vw, 280px); }
+}
+
+/* iOS安全区域 */
+@supports (padding: max(0px)) {
+  .mobile-bottom-bar { padding-bottom: max(env(safe-area-inset-bottom), 0px); }
+  .content { padding-left: max(16px, env(safe-area-inset-left)); padding-right: max(16px, env(safe-area-inset-right)); }
+}
+
+/* 图片加载占位 */
+.content img { background: var(--vp-c-bg-mute); min-height: 40px; }
+
+/* 代码块滚动条美化 */
+.content pre::-webkit-scrollbar { height: 4px; }
+.content pre::-webkit-scrollbar-track { background: transparent; }
+.content pre::-webkit-scrollbar-thumb { background: rgba(255,255,255,.2); border-radius: 4px; }
